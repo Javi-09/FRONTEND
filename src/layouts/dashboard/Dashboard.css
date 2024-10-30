@@ -1,0 +1,66 @@
+.dashboard-container {
+    width: 100%;
+    max-width: 600px; /* Limitar el ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Espaciado superior e inferior */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+  }
+  
+  .file-input {
+    margin: 10px 0; /* Espaciado superior e inferior */
+  }
+  
+  .action-button {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    font-size: 1rem; /* Tamaño de fuente */
+    margin: 10px 0; /* Espaciado superior e inferior */
+    transition: background-color 0.3s; /* Transición suave */
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+  }
+  
+  .error-message {
+    color: red; /* Color del texto del mensaje de error */
+  }
+  
+  .results-container {
+    overflow-y: auto;
+    max-height: 300px; /* Altura máxima de la sección de resultados */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .metrics-table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+    text-align: center;
+    font-size: 0.9rem; /* Tamaño de fuente de la tabla */
+  }
+  
+  .metrics-table th,
+  .metrics-table td {
+    border: 1px solid #ccc; /* Bordes de las celdas */
+    padding: 8px; /* Espaciado interno de las celdas */
+  }
+  
+  .metrics-table th {
+    background-color: #f4f4f4; /* Color de fondo de los encabezados */
+  }
+  
