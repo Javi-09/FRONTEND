@@ -99,7 +99,7 @@ function Dashboard() {
           const metricValue = result.metrics.component.measures.find(
             (m) => m.metric === metricName
           )?.value;
-          row.push(metricValue || 0);
+          row.push(metricValue !== undefined ? metricValue : "None");
         });
         csvData.push(row);
       });
@@ -107,7 +107,7 @@ function Dashboard() {
       const row = [projectKey];
       metricOrder.forEach((metricName) => {
         const metricValue = metrics.component.measures.find((m) => m.metric === metricName)?.value;
-        row.push(metricValue || 0);
+        row.push(metricValue !== undefined ? metricValue : "None");
       });
       csvData.push(row);
     }
@@ -241,7 +241,7 @@ function Dashboard() {
                             )?.value;
                             return (
                               <td key={metricName} style={{ padding: "8px" }}>
-                                {metricValue || 0}
+                                {metricValue !== undefined ? metricValue : "None"}
                               </td>
                             );
                           })}
@@ -280,7 +280,7 @@ function Dashboard() {
                           )?.value;
                           return (
                             <td key={metricName} style={{ padding: "8px" }}>
-                              {metricValue || 0}
+                              {metricValue !== undefined ? metricValue : "None"}
                             </td>
                           );
                         })}
